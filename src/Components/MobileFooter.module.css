@@ -1,0 +1,17 @@
+.footerContainer {
+    display: flex;
+    margin: 12% 0 2% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.iconSpace {
+    margin: 0 7%;
+}

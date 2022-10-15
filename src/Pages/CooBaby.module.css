@@ -1,0 +1,30 @@
+.container {
+    width: 90%;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .titleText {
+    font-size: 3vw;
+    margin-top: 10%;
+  }
+  
+  .spacer {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+  .img {
+      width: 100%;
+      margin-top: 8%;
+      border-radius: 16px;
+      background-image: linear-gradient(to bottom, #ecf2e3, #B8C6AC);
+  }
+
+  @media screen and (max-width: 960px) {
+    .img:nth-of-type(1) {
+      margin-top: 10%;
+    }
+  }

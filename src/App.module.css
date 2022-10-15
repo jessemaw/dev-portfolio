@@ -1,0 +1,8 @@
+.container {
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #EDF2F5;
+    flex-direction: column;
+    align-items: center;
+  }

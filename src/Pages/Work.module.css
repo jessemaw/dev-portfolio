@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+.container {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleText {
+    font-size: 3vw;
+    margin-top: 10%;
+    font-family: "Space Mono", monospace;
+}
+
+.spacer {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.test {
+    background-color: grey;
+    height: 40vh;
+    margin-bottom: 5%;
+}
+
+a {
+    color: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom, #ecf2e3, #B8C6AC);
+    box-shadow: 2px 12px 40px 10px lightgray;
+}
+
+.firstGradient {
+    background-image: linear-gradient(to bottom, #ECECEC, #c0c0c0 );
+    box-shadow: 2px 12px 40px 10px lightgray;
+}
+
+.secondGradient {
+    background-image: linear-gradient(to bottom, #FAFAFA, #FDF7EE);
+    box-shadow: 2px 12px 40px 15px lightgray;
+}
+
+.thirdGradient {
+    background-image: linear-gradient(to bottom, #f0efed, #4e6e7d);
+    box-shadow: 2px 12px 40px 15px lightgray;
+}
+
+.fourthGradient {
+    background-image: linear-gradient(to bottom, #d8d8d8, #4e4d6b);
+    box-shadow: 2px 12px 40px 15px lightgray;
+}

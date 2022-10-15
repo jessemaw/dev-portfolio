@@ -1,0 +1,46 @@
+.container {
+    width: 90%;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .titleText {
+    font-size: 3vw;
+    margin-top: 10%;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+.imageContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.desktopImg {
+    width: 48%;
+    border-radius: 16px;
+}
+
+.case {
+    display: flex;
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* @media screen and (max-width: "960px") {
+  .imageContainer {
+
+  }
+} */

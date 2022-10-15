@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+.container {
+  width: 90%;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+.titleText {
+  font-size: 3vw;
+  margin-top: 10%;
+  color: #082038;
+  font-family: "Space Mono", monospace;
+}
+
+.spacer {
+  width: 100%;
+  height: 2px;
+  background-color: #082038;
+}
+
+.nft {
+    width: 100%;
+    border-radius: 24px;
+    margin-top: 5%;
+    box-shadow: 2px 12px 40px 10px lightgray;
+}
+
+/* @media screen and (max-width: 960px) {
+  .jpegBox {
+    height: 60vh;
+  }
+
+  .nft {
+    height: 30vh;
+  }
+} */

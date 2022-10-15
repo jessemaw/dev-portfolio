@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+html {
+    position: relative;
+    overflow-y: auto;
+    height: 100vh;
+
+}
+
+body {
+    height: auto;
+}
+
+h1, h2, h3, p {
+    font-family: "Space Mono", monospace;
+    color: #082038;
+}
+

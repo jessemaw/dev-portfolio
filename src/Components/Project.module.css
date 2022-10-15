@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+.background {
+    background-color: lightgray;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* .box:first-child {
+    margin-left: 3%;
+}
+
+.box:last-child {
+    margin-right: 3%;
+} */
+
+.phoneContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    align-items: center;
+}
+
+.phone {
+    height: 100%;
+}
+
+.titleContainer {
+    height: 20%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.title {
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 1.6vw;
+    margin: 0;
+    text-decoration: none;
+    color: none;
+    font-family: "Space Mono", monospace;
+}
+
+.description {
+    font-size: 1.2vw;
+    margin-top: 0.6%;
+    margin-bottom: 1%;
+    font-family: "Space Mono", monospace;
+}
+
+.desktopBox {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.desktopContainer {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.desktop {
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 24px;
+}
+
+/* @media screen and (max-width: 960px) {
+    .gradient {
+        margin-top: 10%;
+    }
+} */
