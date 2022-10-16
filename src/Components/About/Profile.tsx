@@ -4,7 +4,7 @@ import Moody from "../../assets/images/moody.png";
 
 const Profile = () => {
     return <div className={classes.aboutBox}>
-        <img src={Moody} className={classes.moody} />
+        <img src={Moody} className={classes.moody} alt="Profile picture alias" />
         <div className={classes.textBox}>
           <h1 className={classes.about}>
             I'm Jesse <br />A developer / designer <br /> with a love for smooth
