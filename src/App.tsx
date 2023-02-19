@@ -8,6 +8,7 @@ import Harmonicity from "./Pages/Harmonicity";
 import MawFiddle from './Pages/MawFiddle';
 import FiddleApp from "./Pages/FiddleApp";
 import CooBaby from "./Pages/CooBaby";
+import Xen from './Pages/Xen';
 import Footer from './Components/Footer';
 import { useMediaQuery } from 'react-responsive';
 import MobileFooter from './Components/MobileFooter';
@@ -24,6 +25,7 @@ function App() {
         <Route path="maw-fiddle" element={<MawFiddle />} />
         <Route path="fiddle-app" element={<FiddleApp />} />
         <Route path="coobaby" element={<CooBaby />} />
+        <Route path="xen" element={<Xen />} />
       </Routes>
       {isMobile && <MobileFooter />}
       {!isMobile && <Footer />}

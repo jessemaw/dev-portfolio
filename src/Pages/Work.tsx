@@ -18,6 +18,7 @@ import MobileNavbar from "../Components/MobileNavbar";
 import Spacer from "../Components/Spacer";
 import { useMediaQuery } from "react-responsive";
 import Phone from "../Components/Phone";
+import XenScreenShot from "../assets/images/xen-screenshot.png";
 
 const Work = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 960px)" });
@@ -70,6 +71,20 @@ const Work = () => {
               gradient={classes.gradient}
             />
           </Link>
+          <Spacer spacerTitle="Web3" />
+          <Link
+            to="/xen"
+            style={{ textDecoration: "none", color: "none" }}
+          >
+            <Project
+              title="XEN APP"
+              description="INTERNET COMPUTER CRYPTO EXCHANGE"
+              desktopSrc={XenScreenShot}
+              gradient={classes.gradient}
+            />
+
+          </Link>
+          
         </React.Fragment>
       )}
       {isMobile && (
@@ -110,6 +125,13 @@ const Work = () => {
               leftSrc={coobabyPlayer}
               gradient={classes.gradient}
             />
+          </Link>
+
+          <Spacer spacerTitle="Web3" />
+
+          <Link to="/xen">
+
+          <Phone title="XEN APP" description="ICP CRYPTO EXCHANGE" leftSrc={XenScreenShot} gradient={classes.gradient} />
           </Link>
         </React.Fragment>
       )}

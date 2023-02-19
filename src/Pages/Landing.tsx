@@ -30,9 +30,9 @@ const Landing = () => {
     <h1 className={classes.title}>I like to BUIDL</h1>
     </div>
     </header>
-    <body className={classes.body}>
+    <div className={classes.body}>
     <HomeContent />
-    </body>
+    </div>
     {isMobile && <div className={classes.buttonContainer}>
     <Link to="/about"><button className={classes.topBtn}>ABOUT</button></Link>
     <Link to="/work"><button className={classes.bottomBtn}>WORK</button></Link>
