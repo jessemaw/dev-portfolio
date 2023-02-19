@@ -6,7 +6,7 @@ import MobileNavbar from "../Components/MobileNavbar";
 import { useMediaQuery } from "react-responsive";
 import WorkCard from "../UI/WorkCard";
 import XenClipWebM from "../assets/images/xen-app-demonstration.webm";
-import XenClipMp4 from "../assets/images/xen-app-demonstration.mp4";
+import XenClipMp4 from "../assets/images/xen-app-demonstration.mov";
 
 const Xen = () => {
     const isMobile = useMediaQuery({query: "(max-width: 960px)"});
