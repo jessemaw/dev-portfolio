@@ -15,7 +15,7 @@ const Xen = () => {
     <Spacer spacerTitle="XEN" />
     <WorkCard className={classes.gradient}>
         <div className={classes.videoContainer}>
-        <video className={classes.video} controls>
+        <video className={classes.video} controls playsInline>
             <source src={XenClip} type="video/webm" />
         </video>
         </div>
