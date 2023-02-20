@@ -10,32 +10,43 @@ import XenClipMp4 from "../assets/images/xen-app-demonstration.mp4";
 import ReactPlayer from "react-player";
 
 const Xen = () => {
-    const isMobile = useMediaQuery({query: "(max-width: 960px)"});
-    return <div className={classes.container}>
-    {!isMobile && <Navbar />}
-    {isMobile && <MobileNavbar />}
-    <Spacer spacerTitle="XEN" />
-    <WorkCard className={classes.gradient}>
+  const isMobile = useMediaQuery({ query: "(max-width: 960px)" });
+  return (
+    <div className={classes.container}>
+      {!isMobile && <Navbar />}
+      {isMobile && <MobileNavbar />}
+      <Spacer spacerTitle="XEN" />
+      <WorkCard className={classes.gradient}>
         <div className={classes.videoContainer}>
-        {/* <video className={classes.video} controls playsInline>
+          {/* <video className={classes.video} controls playsInline>
             <source src={XenClipMp4} type="video/mp4" />
             <source src={XenClipWebM} type="video/webm" />
         </video> */}
-        <ReactPlayer url={XenClipMp4} controls className={classes.video} width="100%" height="100%" playsinline />
+          <ReactPlayer
+            url={[
+              { src: XenClipWebM, type: "video/webm" },
+              { src: XenClipMp4, type: "video/mp4" },
+            ]}
+            controls
+            className={classes.video}
+            width="100%"
+            height="100%"
+          />
         </div>
-    </WorkCard>
-    <div className={classes.case}>
+      </WorkCard>
+      <div className={classes.case}>
         <h1 className={classes.caseTitle}>Product</h1>
         <p className={classes.caseEntry}>
-          This is Xen, a fully functional crypto exchange built using the 
-          Internet Computer Blockchain (ICP). Coded with Motoko, ICP's native smart
-          contract language, users can receive free Xen tokens from
-          the faucet, check their wallet balance, and send tokens to any ICP
-          wallet. The backend ensures that users can only receive one free faucet
+          This is Xen, a fully functional crypto exchange built using the
+          Internet Computer Blockchain (ICP). Coded with Motoko, ICP's native
+          smart contract language, users can receive free Xen tokens from the
+          faucet, check their wallet balance, and send tokens to any ICP wallet.
+          The backend ensures that users can only receive one free faucet
           transaction.
         </p>
       </div>
     </div>
-}
+  );
+};
 
 export default Xen;
