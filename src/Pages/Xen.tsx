@@ -21,7 +21,7 @@ const Xen = () => {
             <source src={XenClipMp4} type="video/mp4" />
             <source src={XenClipWebM} type="video/webm" />
         </video> */}
-        <ReactPlayer url={XenClipMp4} controls className={classes.video} width="100%" height="100%" />
+        <ReactPlayer url={XenClipMp4} controls className={classes.video} width="100%" height="100%" playsinline />
         </div>
     </WorkCard>
     <div className={classes.case}>
