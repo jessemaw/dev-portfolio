@@ -6,7 +6,7 @@ import MobileNavbar from "../Components/MobileNavbar";
 import { useMediaQuery } from "react-responsive";
 import WorkCard from "../UI/WorkCard";
 import XenClipWebM from "../assets/images/xen-app-demonstration.webm";
-import XenClipMp4 from "../assets/images/xen-app-demonstration.mov";
+import XenClipMp4 from "../assets/images/xen-app-demonstration.mp4";
 
 const Xen = () => {
     const isMobile = useMediaQuery({query: "(max-width: 960px)"});
@@ -16,7 +16,7 @@ const Xen = () => {
     <Spacer spacerTitle="XEN" />
     <WorkCard className={classes.gradient}>
         <div className={classes.videoContainer}>
-        <video className={classes.video} autoPlay controls playsInline muted>
+        <video className={classes.video} controls playsInline preload="none">
             <source src={XenClipMp4} type="video/mp4" />
             <source src={XenClipWebM} type="video/webm" />
         </video>
