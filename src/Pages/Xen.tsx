@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import WorkCard from "../UI/WorkCard";
 import XenClipWebM from "../assets/images/xen-app-demonstration.webm";
 import XenClipMp4 from "../assets/images/xen-app-demonstration.mp4";
+import ReactPlayer from "react-player";
 
 const Xen = () => {
     const isMobile = useMediaQuery({query: "(max-width: 960px)"});
@@ -16,10 +17,11 @@ const Xen = () => {
     <Spacer spacerTitle="XEN" />
     <WorkCard className={classes.gradient}>
         <div className={classes.videoContainer}>
-        <video className={classes.video} controls playsInline>
+        {/* <video className={classes.video} controls playsInline>
             <source src={XenClipMp4} type="video/mp4" />
             <source src={XenClipWebM} type="video/webm" />
-        </video>
+        </video> */}
+        <ReactPlayer url={XenClipMp4} controls className={classes.video} width="100%" height="100%" />
         </div>
     </WorkCard>
     <div className={classes.case}>
